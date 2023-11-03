@@ -19,7 +19,17 @@
 - Demonstrate that the application is practical and could have real world use.
 - Compare project to succesful NLP related applications, to ensure the programmers on the correct path. These checks will be performed every so often.
  ## Objectives
-
+- Learn about NLP techniques and libraries such as NLTK, spaCy, TextBlob, PyTorch and what advantages and disadvantages they each have.
+- Create a bot that can sumarize long texts into a consise understandable format.
+### Key Objectives
+#### Gather Data
+- Collect data from corpuses, and other text collections tailored to our specific area that we want the model to be knowledgable on.
+#### Text Preprocessing
+- Preprocess the data, clean up the input, and remove all stopwords, unneeded punctuation, and unrelated things from the text.
+#### Sumarization
+- Train or create a model that can summarize preprocessed data to our specific needs.
+#### UX/UI Design
+- Design a user interface that will allow the application to be not only usable, but user friendly.
  ## Class and Block Diagram
 
  ## Contribution Plan
