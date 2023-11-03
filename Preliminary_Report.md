@@ -36,6 +36,6 @@
 
  ## Contribution Plan
  #### Tyler Thompson
- - Help research useful NLP related techniques. Help problem solve and NLP related techniques we may run into.
+ - Help research useful NLP related techniques. Help problem solve NLP related issues we may run into.
  - Document the code properly and effectively.
  - Try and be more have a back end engineer for the project.
