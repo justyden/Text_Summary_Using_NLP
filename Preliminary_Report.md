@@ -21,7 +21,7 @@
  ## Objectives
 - Learn about NLP techniques and libraries such as NLTK, spaCy, TextBlob, PyTorch and what advantages and disadvantages they each have.
 - Create a bot that can sumarize long texts into a consise understandable format.
-### Key Objectives
+#### Key Objectives
 ##### Gather Data
 - Collect data from corpuses, and other text collections tailored to our specific area that we want the model to be knowledgable on.
 #### Text Preprocessing
