@@ -34,7 +34,10 @@
 ##### UX/UI Design
 - Design a user interface that will allow the application to be not only usable, but user friendly.
  ## Class and Block Diagram
-
+<div align="center">
+  <img src="[https://github.com/BabyKangaroo117/Frugl-APP/assets/13011373/b5efcc9f-946b-44ee-88cb-0036170282ff](https://github.com/justyden/Text_Summary_Using_NLP/blob/main/UML%20class.jpeg)">
+  <br>
+ </div>
  ## Contribution Plan
  #### Tyler Thompson
  - Help research useful NLP related techniques. Help problem solve NLP related issues we may run into.
