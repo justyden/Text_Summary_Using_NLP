@@ -38,6 +38,8 @@
   <img src="https://github.com/justyden/Text_Summary_Using_NLP/blob/main/UML%20class.jpeg">
   <br>
  </div>
+
+ 
  ## Contribution Plan
  #### Tyler Thompson
  - Help research useful NLP related techniques. Help problem solve NLP related issues we may run into.
@@ -46,4 +48,14 @@
 #### Love-Divine Onwulata
 - Research which NLP libraries will be most useful to the project
 - Implement the NLP into the application
+- Help implement the summarization model
 - Help label the datasets
+#### Joseph H Porrino
+- Research and collect datasets and articles that have political bias
+- Label and filter articles for the feature extraction
+- Create the User Interface for the application
+- Help with bias detection
+#### Aaron Feinberg
+- Develop the Bias Detection functionality for the application
+- Help with the summarization model
+- Help with the UX/UI design
