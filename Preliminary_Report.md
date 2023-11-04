@@ -25,9 +25,10 @@
 - Create a bot that can sumarize long texts into a consise understandable format.
 #### Key Objectives
 ##### Gather Data
-- Collect data from corpuses, and other text collections tailored to our specific area that we want the model to be knowledgable on.
+- Collect data from corpuses, and other text collections and datasets that contain articles that have political biases to them
 #### Text Preprocessing
 - Preprocess the data, clean up the input, and remove all stopwords, unneeded punctuation, and unrelated things from the text.
+- Label the sentences and words that show political bias
 ##### Sumarization
 - Train or create a model that can summarize preprocessed data to our specific needs.
 ##### UX/UI Design
@@ -39,3 +40,7 @@
  - Help research useful NLP related techniques. Help problem solve NLP related issues we may run into.
  - Document the code properly and effectively.
  - Try and be more have a back end engineer for the project.
+#### Love-Divine Onwulata
+- Research which NLP libraries will be most useful to the project
+- Implement the NLP into the application
+- Help label the datasets
