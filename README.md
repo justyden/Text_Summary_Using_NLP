@@ -1,1 +1,1 @@
-# Text_Summary_Using_NLP
+# Text Summarizer That Can Detect Political Party
