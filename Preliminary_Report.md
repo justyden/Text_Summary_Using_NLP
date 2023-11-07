@@ -22,7 +22,7 @@
 
  ## Objectives
 - Learn about NLP techniques and libraries such as NLTK, spaCy, TextBlob, PyTorch and what advantages and disadvantages they each have.
-- Create a bot that can sumarize long texts into a consise understandable format.
+- Create a bot that can summarize a paper and determine determine the political party.
 #### Key Objectives
 ##### Gather Data
 - Collect data from corpuses, and other text collections and datasets that contain articles that have political biases to them
