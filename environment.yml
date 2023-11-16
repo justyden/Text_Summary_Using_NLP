@@ -1,0 +1,10 @@
+name: venv
+channels:
+  - defaults
+dependencies:
+  - python
+  - numpy
+  - pandas
+  - matplotlib
+  - jupyter
+  - scikit-learn
