@@ -39,6 +39,19 @@
   <br>
  </div>
 
+## Unique Feature (Django)
+our project will be hosted on an interactive website created within the django framework.
+Users will be able to paste text into a search bar and the text data will be sent for
+processing to the backend of our app. After processing, users will be presented with the following
+- Sentiment analysis of the overall "theme" of the text (positive, negative, or neutral)
+- emotional classification based on NRCLex 
+- some general information about the text 
+
+### Django Site Schematic
+- TextAnalyzer  
+  - Interface with the user and get text input via a form 
+  - pass data to our custom sentiment analyzer/emotional classifier modules
+  - port a visual representation of our analysis back to the user 
  
  ## Contribution Plan
  #### Tyler Thompson
