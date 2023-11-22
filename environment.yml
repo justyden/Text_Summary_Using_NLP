@@ -2,10 +2,12 @@ name: venv
 channels:
   - defaults
 dependencies:
-  - python
+  - python=3.8
+  - pip
   - numpy
   - pandas
   - matplotlib
   - jupyter
   - scikit-learn
-  - nrclex
+  - pip:
+    - NRCLex
