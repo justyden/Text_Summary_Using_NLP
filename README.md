@@ -1,4 +1,4 @@
-# Text Summarizer That Can Detect Political Party
+# Emotion Classifcation Using NLP
 
 ## Creating the Venv
 - Simply go into the terminal that has access to Anaconda and input __conda env create -f environment.yml__.
