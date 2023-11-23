@@ -4,7 +4,6 @@ from django.db import models
 MAX_TWEET_LENGTH = 280
 
 # Create your models here
-
 class RawTextDataModel(models.Model):
     """Holds the raw text that the user would like to analyze"""
     raw_text = models.CharField(max_length = MAX_TWEET_LENGTH)
