@@ -19,7 +19,8 @@ def home(request):
             return render(request, 'TextAnalyzer/result.html', analyzed_data)
 
     else:
-        form = TextInputForm
+        initial_text_value = ""  # Set your desired initial value
+        form = TextInputForm(initial={'text': initial_text_value})
 
     return render(request, 'TextAnalyzer/home.html', {'form': form})
 
