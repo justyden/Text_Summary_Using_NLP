@@ -1,4 +1,5 @@
 <!-- base.html -->
+{% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -6,22 +7,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dark_mode.css' %}" id="dark-theme">
     <title>{% block title %}Your App{% endblock %}</title>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Text Analyzer</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <!-- Add more navigation links as needed -->
-        </ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container"> <!-- Wrap the navbar content in a container -->
+        <a class="navbar-brand" href="#">Text Analyzer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto"> <!-- Use ml-auto to align items to the right -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <!-- Add more navigation links as needed -->
+            </ul>
+        </div>
     </div>
 </nav>
 
