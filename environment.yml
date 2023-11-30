@@ -12,3 +12,6 @@ dependencies:
   - pip:
     - NRCLex
     - Django
+    - transformers
+    - torch
+    - sentencepiece
