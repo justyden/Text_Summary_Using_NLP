@@ -4,14 +4,17 @@ channels:
 dependencies:
   - python=3.8
   - pip
+  - nltk
   - numpy
   - pandas
   - matplotlib
   - jupyter
   - scikit-learn
+  - pytorch
   - pip:
     - NRCLex
     - Django
     - transformers
-    - torch
     - sentencepiece
+    - regex
+  
