@@ -151,14 +151,11 @@ class Helper:
         return string
 
 if __name__ == "__main__":
-    text1 = ["As I walked into the surprise party, the room erupted with cheers and joy."]
-    text2 = "Yes"
+    text = ["There was so much going on, I did not know what to do there."]
     analysis = Helper()
-    emotions1 = analysis.get_emotions_detected(text1)
-    sentiment1 = analysis.find_sentiment(text1)
-    #emotions2 = analysis.get_emotions_detected(text2)
-    #sentiment2 = analysis.find_sentiment(text2)
-    #summarize = analysis.summarize_texts(text1)
-    #print(summarize)
-    print(sentiment1)
-    print(emotions1)
+    emotions = analysis.get_emotions_detected(text)
+    sentiment = analysis.find_sentiment(text)
+    summarize = analysis.summarize_texts(text)
+    print(summarize)
+    print(sentiment)
+    print(emotions)

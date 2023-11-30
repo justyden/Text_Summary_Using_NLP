@@ -2,6 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import render
 from .forms import TextInputForm
+from Helper import Helper
+
+analysis = Helper()
 
 # Create your views here.
 def index(request):
@@ -12,10 +15,20 @@ def home(request):
         form = TextInputForm(request.POST)
 
         if form.is_valid():
-            # CODE FOR TEXT ANALYSIS WILL GO HERE
-
             raw_text = form.cleaned_data['text']
-            analyzed_data: dict = {'sentiment_analysis': 10, 'emotion_analysis': 'happy'}    # what ever analysis is performed, package it into here
+
+            # Perform text analysis using your Helper class
+            summary = analysis.summarize_texts([raw_text])  # Pass a list containing the raw_text
+            sentiment_result = analysis.find_sentiment([raw_text])
+            emotion_result = analysis.get_emotions_detected([raw_text])  # Pass a list containing the raw_text
+
+            analyzed_data = {
+                'raw_text': raw_text,
+                'summary': summary,
+                'sentiment_result': sentiment_result,
+                'emotion_result': emotion_result,
+            }
+
             return render(request, 'TextAnalyzer/result.html', analyzed_data)
 
     else:
@@ -24,5 +37,5 @@ def home(request):
 
     return render(request, 'TextAnalyzer/home.html', {'form': form})
 
-
-
+def about(request):
+    return render(request, 'TextAnalyzer/about.html')
