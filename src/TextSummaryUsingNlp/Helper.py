@@ -1,16 +1,17 @@
 from nrclex import NRCLex
 import re
 
-from src.TextSummaryUsingNlp.SentimentAnalysis import SentimentAnalysis
-from src.TextSummaryUsingNlp.TextSummary import TextSummary
+from SentimentAnalysis import SentimentAnalysis
+from TextSummary import TextSummary
 
 
 class Helper:
 
-    def __int__(self):
+    def __init__(self):
         self.textSummarizer = TextSummary()
-        self. sentimentAnalyzer = SentimentAnalysis()
+        self.sentimentAnalyzer = SentimentAnalysis()
         self.num_of_top_emotions = 3
+
     def find_top_emotion(self, sentences, alt=False):
         emotion_count = {
             'fear': 0,
@@ -148,3 +149,17 @@ class Helper:
         string = string[:-1]
 
         return string
+
+if __name__ == "__main__":
+    text1 = "As I walked into the surprise party, the room erupted with cheers and joy."
+    text2 = "Yes"
+    print(text1)
+    analysis = Helper()
+    #emotions1 = analysis.get_emotions_detected(text1)
+    #sentiment1 = analysis.find_sentiment(text1)
+    emotions2 = analysis.get_emotions_detected(text2)
+    sentiment2 = analysis.find_sentiment(text2)
+    #summarize = analysis.summarize_texts(text)
+    #print(summarize)
+    print(sentiment2)
+    print(emotions2)
