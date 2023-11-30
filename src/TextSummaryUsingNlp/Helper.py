@@ -135,16 +135,16 @@ class Helper:
         emotion_dict = self.top_emotions_dict(text, self.num_of_top_emotions)
         string = "The most significant emotions were: "
         for emotion in list(emotion_dict.keys()):
-            string = string + ", "
+            string = string + " " + emotion + ", "
         string = string[:-2]
         string = string + "\n"
         for emotion in list(emotion_dict.keys()):
             string = string + "Words like: "
             for count, word in enumerate(emotion_dict[emotion]):
                 if count+1 != len(emotion_dict[emotion]):
-                    string = string + word + ", "
+                    string = string + word[0] + ", "
                 else:
-                    string = string + "and " + word + ", "
+                    string = string + "and " + word[0] + ", "
             string = string + "convey " + emotion + ". \n"
         string = string[:-1]
 
