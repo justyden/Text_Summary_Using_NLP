@@ -151,7 +151,7 @@ class Helper:
         return string
 
 if __name__ == "__main__":
-    text1 = "As I walked into the surprise party, the room erupted with cheers and joy."
+    text1 = ["As I walked into the surprise party, the room erupted with cheers and joy."]
     text2 = "Yes"
     print(text1)
     analysis = Helper()
