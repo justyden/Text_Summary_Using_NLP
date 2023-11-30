@@ -120,7 +120,7 @@ class Helper:
 
     def summarize_texts(self, text):
         top_emotion = self.find_top_emotion(text)
-        coherent_text = self.prioritize_sentences(text)
+        coherent_text = self.prioritize_sentences(text, top_emotion)
         summary = self.textSummarizer.summarize_text_bart(coherent_text, top_emotion)
 
         return "Here is a rough summary of the texts: " + summary
