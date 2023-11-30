@@ -122,7 +122,7 @@ class Helper:
     def summarize_texts(self, text):
         top_emotion = self.find_top_emotion(text)
         coherent_text = self.prioritize_sentences(text, top_emotion)
-        summary = self.textSummarizer.summarize_text_bart(coherent_text, top_emotion)
+        summary = self.textSummarizer.summarize_text_bart(coherent_text)
 
         return "Here is a rough summary of the texts: " + summary
 
@@ -158,7 +158,7 @@ if __name__ == "__main__":
     sentiment1 = analysis.find_sentiment(text1)
     #emotions2 = analysis.get_emotions_detected(text2)
     #sentiment2 = analysis.find_sentiment(text2)
-    #summarize = analysis.summarize_texts(text)
-    #print(summarize)
+    summarize = analysis.summarize_texts(text1)
+    print(summarize)
     print(sentiment1)
     print(emotions1)
