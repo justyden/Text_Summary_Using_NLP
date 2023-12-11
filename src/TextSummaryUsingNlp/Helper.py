@@ -124,18 +124,18 @@ class Helper:
         coherent_text = self.prioritize_sentences(text, top_emotion)
         summary = self.textSummarizer.summarize_text_bart(coherent_text)
 
-        return "Here is a rough summary of the texts: " + summary
+        return "Here's my interpretation of the text: " + summary
 
     def find_sentiment(self, text):
         detected_sentiment, score = self.sentimentAnalyzer.calc_sentiment(text)
-        string = "The overall sentiment detected is " + detected_sentiment + " with a score of " + str(score) + "."
+        string = "Overall sentiment detected: " + detected_sentiment.upper() + ". \n Confidence: " + str(round((score*100),2)) + "%"
         return string
 
     def get_emotions_detected(self, text):
         emotion_dict = self.top_emotions_dict(text, self.num_of_top_emotions)
         string = "The most significant emotions were: "
         for emotion in list(emotion_dict.keys()):
-            string = string + " " + emotion + ", "
+            string = string + " " + emotion.upper() + ", "
         string = string[:-2]
         string = string + "\n"
         for emotion in list(emotion_dict.keys()):
@@ -145,6 +145,8 @@ class Helper:
                     string = string + word[0] + ", "
                 else:
                     string = string + "and " + word[0] + ", "
+            if emotion == 'positive' or emotion == 'negative':
+                emotion = 'a ' + emotion + ' feeling'
             string = string + "convey " + emotion + ". \n"
         string = string[:-1]
 
