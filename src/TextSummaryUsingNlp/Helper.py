@@ -127,8 +127,8 @@ class Helper:
         return "Here is a rough summary of the texts: " + summary
 
     def find_sentiment(self, text):
-        sentiment, score = self.sentimentAnalyzer.calc_sentiment(text)
-        string = "The overall sentiment detected is " + sentiment + " with a score of " + str(score) + "."
+        detected_sentiment, score = self.sentimentAnalyzer.calc_sentiment(text)
+        string = "The overall sentiment detected is " + detected_sentiment + " with a score of " + str(score) + "."
         return string
 
     def get_emotions_detected(self, text):
